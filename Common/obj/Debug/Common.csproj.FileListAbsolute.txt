@@ -1,0 +1,6 @@
+C:\Users\ASUS\Documents\klk2022probni\Common\bin\Debug\Common.dll
+C:\Users\ASUS\Documents\klk2022probni\Common\bin\Debug\Common.pdb
+C:\Users\ASUS\Documents\klk2022probni\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\Users\ASUS\Documents\klk2022probni\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\klk2022probni\Common\obj\Debug\Common.dll
+C:\Users\ASUS\Documents\klk2022probni\Common\obj\Debug\Common.pdb
