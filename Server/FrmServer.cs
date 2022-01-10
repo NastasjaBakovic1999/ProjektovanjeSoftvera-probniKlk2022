@@ -46,10 +46,15 @@ namespace Server
         private void btnZaustavi_Click(object sender, EventArgs e)
         {
             server.Stop();
+            MessageBox.Show("Server je zaustavljen!");
+            btnZaustavi.Enabled = false;
+            btnPokreni.Enabled = true;
         }
 
         private void FrmServer_FormClosed(object sender, FormClosedEventArgs e)
         {
+            server.Stop();
+            MessageBox.Show("Server je ugasen!");
             Environment.Exit(0);
         }
     }

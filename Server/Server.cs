@@ -47,7 +47,7 @@ namespace Server
             }
             catch (SocketException ex)
             {
-                Debug.WriteLine(">>>" + ex.Message);
+                Debug.WriteLine(">>>" + ex.Message );
             }
         }
 
@@ -66,7 +66,6 @@ namespace Server
                 klijent.Stop();
             }
             osluskujuciSoket?.Close();
-            osluskujuciSoket = null;
         }
 
 

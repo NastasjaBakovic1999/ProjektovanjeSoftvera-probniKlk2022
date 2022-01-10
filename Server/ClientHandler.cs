@@ -41,6 +41,14 @@ namespace Server
                         case Operacija.PosaljiJednom:
                             PosaljiJednomKorisniku(zahtev);
                             break;
+                        case Operacija.Kraj:
+                            break;
+                        default:
+                            socket.Shutdown(SocketShutdown.Both);
+                            socket.Close();
+                            korisnici.Remove(this);
+                            kraj = true;
+                            break;
                     }
                 }
             } 
@@ -146,8 +154,11 @@ namespace Server
 
         public void Stop()
         {
-            socket.Shutdown(SocketShutdown.Both);
-            socket.Close();
+            ServerPoruka odgovor = new ServerPoruka
+            {
+                Operacija = Operacija.Kraj
+            };
+            helper.Send(odgovor);
         }
     }
 }

@@ -154,7 +154,6 @@
             this.dgvPorukeKorisnika.RowTemplate.Height = 24;
             this.dgvPorukeKorisnika.Size = new System.Drawing.Size(573, 182);
             this.dgvPorukeKorisnika.TabIndex = 9;
-            this.dgvPorukeKorisnika.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPorukeKorisnika_CellContentDoubleClick);
             // 
             // btnPrikaziPoruke
             // 

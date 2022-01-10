@@ -43,6 +43,7 @@ namespace Klijent
         {
             if (poruke.Count > 3)
             {
+                poruke.Reverse();
                 dgvPoslednje3Poruke.DataSource = new BindingList<Poruka>(poruke.Take(3).ToList());
                 dgvOstalePoruke.DataSource = new BindingList<Poruka>(poruke.Skip(3).ToList());
 
@@ -54,6 +55,7 @@ namespace Klijent
             }
             else
             {
+                poruke.Reverse();
                 dgvPoslednje3Poruke.DataSource = new BindingList<Poruka>(poruke);
 
                 dgvPoslednje3Poruke.Columns["Primio"].Visible = false;
@@ -73,9 +75,10 @@ namespace Klijent
 
         private void CitajPoruke()
         {
+            bool kraj = false;
             try
             {
-                while (true)
+                while (!kraj)
                 {
                     ServerPoruka porukaServera = Komunikacija.Instance.ProcitajPorukuOdServera();
 
@@ -103,6 +106,10 @@ namespace Klijent
                                 dgvPrijavljeniKorisnici.Columns["Sifra"].Visible = false;
                             }));
                             break;
+                        case Operacija.Kraj:
+                            Kraj();
+                            kraj = true;
+                            break;
                         default:
                             break;
                     }
@@ -113,6 +120,13 @@ namespace Klijent
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void Kraj()
+        {
+            KlijentPoruka zahtev = new KlijentPoruka { Operacija = Operacija.Kraj };
+            Komunikacija.Instance.PosaljiPoruku(zahtev);
+            Invoke(new Action(Close));
         }
 
         private void btnPosaljiSvima_Click(object sender, EventArgs e)
@@ -196,12 +210,12 @@ namespace Klijent
             }
         }
 
-        private void dgvPorukeKorisnika_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if(dgvPorukeKorisnika.SelectedCells[0].OwningColumn.Name == "TekstPoruke")
-            {
-                dgvPorukeKorisnika.Columns["TekstPoruke"].Visible = false;
-            }
-        }
+        //private void dgvPorukeKorisnika_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    if(dgvPorukeKorisnika.SelectedCells[0].OwningColumn.Name == "TekstPoruke")
+        //    {
+        //        dgvPorukeKorisnika.Columns["TekstPoruke"].Visible = false;
+        //    }
+        //}
     }
 }

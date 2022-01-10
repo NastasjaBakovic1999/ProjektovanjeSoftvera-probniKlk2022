@@ -3,13 +3,11 @@ C:\Users\ASUS\Documents\klk2022probni\Klijent\bin\Debug\Klijent.exe
 C:\Users\ASUS\Documents\klk2022probni\Klijent\bin\Debug\Klijent.pdb
 C:\Users\ASUS\Documents\klk2022probni\Klijent\bin\Debug\Domain.dll
 C:\Users\ASUS\Documents\klk2022probni\Klijent\bin\Debug\Domain.pdb
-C:\Users\ASUS\Documents\klk2022probni\Klijent\obj\Debug\Klijent.csproj.SuggestedBindingRedirects.cache
 C:\Users\ASUS\Documents\klk2022probni\Klijent\obj\Debug\Klijent.FrmKlijent.resources
 C:\Users\ASUS\Documents\klk2022probni\Klijent\obj\Debug\Klijent.FrmLogin.resources
 C:\Users\ASUS\Documents\klk2022probni\Klijent\obj\Debug\Klijent.Properties.Resources.resources
 C:\Users\ASUS\Documents\klk2022probni\Klijent\obj\Debug\Klijent.csproj.GenerateResource.cache
 C:\Users\ASUS\Documents\klk2022probni\Klijent\obj\Debug\Klijent.csproj.CoreCompileInputs.cache
-C:\Users\ASUS\Documents\klk2022probni\Klijent\obj\Debug\Klijent.csproj.CopyComplete
 C:\Users\ASUS\Documents\klk2022probni\Klijent\obj\Debug\Klijent.exe
 C:\Users\ASUS\Documents\klk2022probni\Klijent\obj\Debug\Klijent.pdb
 C:\Users\ASUS\Documents\klk2022probni\Klijent\obj\Debug\Klijent.csproj.AssemblyReference.cache
@@ -18,3 +16,4 @@ C:\Users\ASUS\Documents\klk2022probni\Klijent\bin\Debug\Server.pdb
 C:\Users\ASUS\Documents\klk2022probni\Klijent\bin\Debug\Server.exe.config
 C:\Users\ASUS\Documents\klk2022probni\Klijent\bin\Debug\Common.dll
 C:\Users\ASUS\Documents\klk2022probni\Klijent\bin\Debug\Common.pdb
+C:\Users\ASUS\Documents\klk2022probni\Klijent\obj\Debug\Klijent.csproj.CopyComplete

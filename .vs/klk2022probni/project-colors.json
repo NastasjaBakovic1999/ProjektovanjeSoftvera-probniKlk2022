@@ -5,7 +5,27 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "1487896b-5c34-4eee-9c33-d0435e829b28": {
+      "ProjectGuid": "1487896b-5c34-4eee-9c33-d0435e829b28",
+      "DisplayName": "Domain",
+      "ColorIndex": 0
+    },
+    "5673e301-4da9-470b-8250-bf98c51b03bc": {
+      "ProjectGuid": "5673e301-4da9-470b-8250-bf98c51b03bc",
+      "DisplayName": "Common",
+      "ColorIndex": 1
+    },
+    "288d23ff-b29b-4e9a-9fc0-3bebfcd1795b": {
+      "ProjectGuid": "288d23ff-b29b-4e9a-9fc0-3bebfcd1795b",
+      "DisplayName": "Klijent",
+      "ColorIndex": 2
+    },
+    "5a21445a-8423-4616-9624-0b6c85e97c9b": {
+      "ProjectGuid": "5a21445a-8423-4616-9624-0b6c85e97c9b",
+      "DisplayName": "Server",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 0
+  "NextColorIndex": 4
 }
